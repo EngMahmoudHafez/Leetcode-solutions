@@ -6,11 +6,10 @@ public:
 
         int i=0,j=p.size()-1,ans=0;
         while(i<=j){
-            if(limit>=p[i]+p[j]){
+            if(limit>=p[i]+p[j])
                 i++;
-            }
             ans++;
-                j--;
+            j--;
         }
         return ans;
     }
